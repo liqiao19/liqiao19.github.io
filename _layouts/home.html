@@ -4,44 +4,56 @@ layout: default
 
 {% include base_path %}
 
+<style>
+  .home-page .page__content { max-width: 42em; }
+  .home-page .home-hero { margin-bottom: 1.5em; }
+  .home-page .home-hero .home-name { font-size: 1.5rem; font-weight: 700; margin: 0 0 0.25em; letter-spacing: -0.02em; }
+  .home-page .home-hero .home-affiliation { color: var(--global-text-color-light, #666); font-size: 0.95rem; margin: 0 0 1em; }
+  .home-page .home-intro { font-size: 0.95rem; line-height: 1.65; color: var(--global-text-color, #333); margin-bottom: 2em; }
+  .home-page .archive__subtitle { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 1.75em; margin-bottom: 0.6em; padding-bottom: 0.35em; border-bottom: 1px solid var(--global-border-color); }
+  .home-page .news-list { list-style: none; padding-left: 0; margin: 0 0 1.5em; }
+  .home-page .news-list li { font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.4em; padding-left: 0; }
+  .home-page .news-list strong { font-weight: 600; margin-right: 0.35em; }
+  .home-page .featured-pub { font-size: 0.9rem; line-height: 1.55; margin: 0; }
+  .home-page .featured-pub a { text-decoration: none; }
+  .home-page .featured-pub a:hover { text-decoration: underline; }
+</style>
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
   <article class="page home-page" itemscope itemtype="http://schema.org/Person">
     <div class="page__inner-wrap">
       <section class="page__content" itemprop="text">
-        <h2 class="archive__subtitle">Introduction</h2>
+        <header class="home-hero">
+          <h1 class="home-name">{{ site.author.name }}</h1>
+          <p class="home-affiliation">{{ site.author.employer }}</p>
+        </header>
+
         <div class="home-intro">{{ content }}</div>
 
         <h2 class="archive__subtitle">News</h2>
         <ul class="news-list">
           {% for item in site.data.home_news %}
-          <li><strong>{{ item.date }}</strong> — {{ item.text }}</li>
+          <li><strong>{{ item.date }}</strong> {{ item.text }}</li>
           {% endfor %}
         </ul>
 
-        <h2 class="archive__subtitle">Academic Background</h2>
-        <ul>
-          <li><strong>Current:</strong> {{ site.author.employer }} — Postdoctoral Research Fellow</li>
-          <li><strong>Education:</strong> Ph.D. (Dual program) University of Surrey &amp; Beijing Institute of Technology; B.E. Beijing Institute of Technology (Xu Teli Talented Class, Rank 1/23)</li>
-          <li><strong>Visiting:</strong> Imperial College London (Visiting Ph.D. with Prof. Deniz Gündüz)</li>
-        </ul>
-
-        <h2 class="archive__subtitle">Featured Publication</h2>
+        <h2 class="archive__subtitle">Featured</h2>
         {% assign featured = site.publications | where: "category", "semantic-communications" | first %}
         {% if featured %}
-        <p>
-          <a href="{{ featured.url | prepend: base_path }}"><strong>{{ featured.title }}</strong></a><br />
+        <p class="featured-pub">
+          <a href="{{ featured.url | prepend: base_path }}">{{ featured.title }}</a>.
           <em>{{ featured.venue }}</em>, {{ featured.date | date: "%Y" }}.
-          {% if featured.paperurl %}<a href="{{ featured.paperurl }}">[PDF/arXiv]</a>{% endif %}
+          {% if featured.paperurl %}<a href="{{ featured.paperurl }}">[PDF]</a>{% endif %}
         </p>
         {% else %}
         {% assign any_pub = site.publications | first %}
         {% if any_pub %}
-        <p>
-          <a href="{{ any_pub.url | prepend: base_path }}"><strong>{{ any_pub.title }}</strong></a><br />
+        <p class="featured-pub">
+          <a href="{{ any_pub.url | prepend: base_path }}">{{ any_pub.title }}</a>.
           <em>{{ any_pub.venue }}</em>, {{ any_pub.date | date: "%Y" }}.
-          {% if any_pub.paperurl %}<a href="{{ any_pub.paperurl }}">[PDF/arXiv]</a>{% endif %}
+          {% if any_pub.paperurl %}<a href="{{ any_pub.paperurl }}">[PDF]</a>{% endif %}
         </p>
         {% endif %}
         {% endif %}
