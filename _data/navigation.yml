@@ -11,6 +11,15 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Honors & Awards"
+    url: /awards/
+
+  - title: "Patents"
+    url: /patents/
+
+  - title: "Academic Services"
+    url: /academic-services/
+
   - title: "Talks"
     url: /talks/    
 

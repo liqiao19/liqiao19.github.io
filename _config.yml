@@ -84,12 +84,14 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
+  iot-connectivity:
+    title: 'Massive IoT/AIoT Connectivity for 6G'
+  semantic-communications:
+    title: 'Generative AI-Based Semantic Communications'
+  csi-feedback:
+    title: 'Deep Learning for Channel State Information Feedback'
   books:
     title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
