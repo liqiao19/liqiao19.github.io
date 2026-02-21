@@ -37,9 +37,9 @@ layout: default
 
         <h2 class="archive__subtitle">Education</h2>
         <ul class="edu-list">
-          <li><strong>Ph.D.</strong> (Dual program) University of Surrey &amp; Beijing Institute of Technology. Supervisors: Dr. Mahdi Boloursaz Mashhadi, Prof. Chuan Heng Foh; Prof. Jun Zhang (BIT).</li>
-          <li><strong>Visiting Ph.D.</strong> Imperial College London (Prof. Deniz Gündüz).</li>
-          <li><strong>B.E.</strong> Beijing Institute of Technology, Electronic Information Engineering (Xu Teli Talented Class; GPA 3.7/4.0, Rank 1/23).</li>
+          {% for item in site.data.home_education %}
+          <li><strong>{{ item.degree }}</strong> {{ item.text }}</li>
+          {% endfor %}
         </ul>
 
         <h2 class="archive__subtitle">News</h2>
