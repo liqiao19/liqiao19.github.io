@@ -6,11 +6,13 @@ author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-
 <p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
 {% endif %}
 
+{% if site.talks.size == 0 %}
+<p class="notice--info" style="padding: 1em; border-left: 4px solid #0066cc; background: #f0f8ff;">Coming soon.</p>
+{% else %}
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+{% endif %}

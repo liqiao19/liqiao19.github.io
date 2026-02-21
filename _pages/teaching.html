@@ -7,6 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+{% if site.teaching.size == 0 %}
+<p class="notice--info" style="padding: 1em; border-left: 4px solid #0066cc; background: #f0f8ff;">Coming soon.</p>
+{% else %}
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
+{% endif %}
