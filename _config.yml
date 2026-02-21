@@ -23,7 +23,7 @@ repository               : "liqiao19/liqiao19.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "bio-photo.jpg"
   name             : "Li Qiao"
   pronouns         : # example: "she/her"
   bio              : "Postdoctoral Research Fellow at the University of Hong Kong (EEE). PhD from University of Surrey & Beijing Institute of Technology. Research: semantic communications, massive IoT/AIoT, grant-free access, over-the-air computation."
