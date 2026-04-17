@@ -15,8 +15,12 @@ layout: default
   .home-page .news-list li { font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.4em; padding-left: 0; }
   .home-page .news-list strong { font-weight: 600; margin-right: 0.35em; }
   .home-page .news-list .news-links { margin-left: 0.3em; }
-  .home-page .news-list .news-links a { display: inline-block; font-size: 0.75rem; padding: 0.1em 0.45em; margin-left: 0.25em; border: 1px solid var(--global-border-color, #ccc); border-radius: 3px; text-decoration: none; color: var(--global-text-color, #333); vertical-align: middle; }
-  .home-page .news-list .news-links a:hover { background: var(--global-theme-color, #0076df); color: #fff; border-color: var(--global-theme-color, #0076df); }
+  .home-page .news-list .news-links a { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.15em 0.5em; margin-left: 0.3em; border-radius: 3px; text-decoration: none; color: #fff; vertical-align: middle; letter-spacing: 0.02em; transition: opacity 0.15s; }
+  .home-page .news-list .news-links a:hover { opacity: 0.8; }
+  .home-page .news-list .news-links a.btn-ieee { background: #0076df; }
+  .home-page .news-list .news-links a.btn-arxiv { background: #b31b1b; }
+  .home-page .news-list .news-links a.btn-demo { background: #2ea44f; }
+  .home-page .news-list .news-links a.btn-link { background: #6c757d; }
   .home-page .featured-list { list-style: none; padding-left: 0; margin: 0; }
   .home-page .featured-list li { font-size: 0.9rem; line-height: 1.55; margin-bottom: 0.75em; }
   .home-page .featured-list a { text-decoration: none; }
@@ -43,10 +47,10 @@ layout: default
             <strong>{{ item.date }}</strong>
             {{ item.text }}
             <span class="news-links">
-              {% if item.ieee %}<a href="{{ item.ieee }}" target="_blank" rel="noopener">IEEE</a>{% endif %}
-              {% if item.arxiv %}<a href="{{ item.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
-              {% if item.demo %}<a href="{{ item.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
-              {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
+              {% if item.ieee %}<a class="btn-ieee" href="{{ item.ieee }}" target="_blank" rel="noopener">IEEE</a>{% endif %}
+              {% if item.arxiv %}<a class="btn-arxiv" href="{{ item.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
+              {% if item.demo %}<a class="btn-demo" href="{{ item.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
+              {% if item.url %}<a class="btn-link" href="{{ item.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
             </span>
           </li>
           {% endfor %}
