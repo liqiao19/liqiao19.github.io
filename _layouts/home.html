@@ -14,8 +14,6 @@ layout: default
   .home-page .news-list { list-style: none; padding-left: 0; margin: 0 0 1.5em; }
   .home-page .news-list li { font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.4em; padding-left: 0; }
   .home-page .news-list strong { font-weight: 600; margin-right: 0.35em; }
-  .home-page .edu-list { list-style: none; padding-left: 0; margin: 0 0 1.5em; font-size: 0.9rem; line-height: 1.6; }
-  .home-page .edu-list li { margin-bottom: 0.35em; }
   .home-page .featured-list { list-style: none; padding-left: 0; margin: 0; }
   .home-page .featured-list li { font-size: 0.9rem; line-height: 1.55; margin-bottom: 0.75em; }
   .home-page .featured-list a { text-decoration: none; }
@@ -34,13 +32,6 @@ layout: default
         </header>
 
         <div class="home-intro">{{ content }}</div>
-
-        <h2 class="archive__subtitle">Education</h2>
-        <ul class="edu-list">
-          {% for item in site.data.home_education %}
-          <li><strong>{{ item.degree }}</strong> {{ item.text }}</li>
-          {% endfor %}
-        </ul>
 
         <h2 class="archive__subtitle">News</h2>
         <ul class="news-list">
