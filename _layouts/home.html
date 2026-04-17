@@ -20,6 +20,8 @@ layout: default
   .home-page .news-list .news-links a.btn-ieee { background: #0076df; }
   .home-page .news-list .news-links a.btn-arxiv { background: #b31b1b; }
   .home-page .news-list .news-links a.btn-demo { background: #2ea44f; }
+  .home-page .news-list .news-links a.btn-code { background: #6f42c1; }
+  .home-page .news-list .news-links a.btn-related { background: #e36209; }
   .home-page .news-list .news-links a.btn-link { background: #6c757d; }
   .home-page .featured-list { list-style: none; padding-left: 0; margin: 0; }
   .home-page .featured-list li { font-size: 0.9rem; line-height: 1.55; margin-bottom: 0.75em; }
@@ -50,6 +52,8 @@ layout: default
               {% if item.ieee %}<a class="btn-ieee" href="{{ item.ieee }}" target="_blank" rel="noopener">IEEE</a>{% endif %}
               {% if item.arxiv %}<a class="btn-arxiv" href="{{ item.arxiv }}" target="_blank" rel="noopener">arXiv</a>{% endif %}
               {% if item.demo %}<a class="btn-demo" href="{{ item.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
+              {% if item.code %}<a class="btn-code" href="{{ item.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+              {% if item.related %}<a class="btn-related" href="{{ item.related }}" target="_blank" rel="noopener">Related</a>{% endif %}
               {% if item.url %}<a class="btn-link" href="{{ item.url }}" target="_blank" rel="noopener">Link</a>{% endif %}
             </span>
           </li>
