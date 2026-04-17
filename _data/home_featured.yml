@@ -1,3 +1,11 @@
-# Featured publication slugs (filename without .md, used to match _publications). Order = display order.
+# Featured publications on the homepage. Order = display order.
+# image: thumbnail path relative to site root (place images in /images/).
+# excerpt: a short one-liner shown below the title.
 - slug: "2025-02-17-token-communications-large-model-framework"
+  image: "/images/featured-tokencom.png"
+  excerpt: "A large multimodal model-driven semantic communication framework that unifies cross-modal transmission through token-level representations."
 - slug: "2024-11-01-massive-digital-over-the-air-computation"
+  images:
+    - "/images/featured-mdaircomp-scenario.png"
+    - "/images/featured-mdaircomp-method.png"
+  excerpt: "A digital over-the-air computation scheme for communication-efficient federated edge learning over massive MIMO."
