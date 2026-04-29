@@ -36,6 +36,10 @@ layout: default
   .home-page .featured-card .featured-links { margin-top: 0.35em; }
   .home-page .featured-card .featured-links a { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.15em 0.5em; margin-right: 0.3em; border-radius: 3px; text-decoration: none; color: #fff; letter-spacing: 0.02em; transition: opacity 0.15s; background: #6c757d; }
   .home-page .featured-card .featured-links a:hover { opacity: 0.8; }
+
+  /* Visitor map widget (MapMyVisitors) */
+  .home-page .mapmyvisitors-widget { margin: 2.5em 0 1.5em; }
+  .home-page .mapmyvisitors-widget * { max-width: 100%; }
 </style>
 
 <div id="main" role="main">
@@ -97,6 +101,11 @@ layout: default
             {% endfor %}
           {% endfor %}
         </ul>
+
+        <h2 class="archive__subtitle">Visitors</h2>
+        <div class="mapmyvisitors-widget" id="mapmyvisitors-widget">
+          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=n6_VS48zC5grhWgVMqU4b1Uwrz-F7aRFEP6vHKiL9PM&cl=ffffff&w=a"></script>
+        </div>
       </section>
     </div>
   </article>
