@@ -19,10 +19,3 @@
   items:
     - role: "Peer Reviewer"
       description: "Reviewed 80+ manuscripts for IEEE JSAC, TWC, TCOM, TVT, TCCN, WCL, CL, and others"
-
-- section: "Teaching & Mentoring"
-  items:
-    - role: "Guest Lecture"
-      description: "\"Token Communications: Large Model-Driven Semantic Interaction for the AIoT Era,\" Durham University, Nov. 2025 (invited by Prof. Hongjian Sun)"
-    - role: "Guest Lecture"
-      description: "\"Generative Semantic Communications: A Paradigm Shift From Bits to Tokens,\" Beijing Institute of Technology, Sep. 2025 (invited by Prof. Zesong Fei)"

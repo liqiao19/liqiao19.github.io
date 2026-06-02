@@ -11,8 +11,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Honors & Awards"
-    url: /awards/
+  # - title: "Honors & Awards"
+  #   url: /awards/
 
   - title: "Patents"
     url: /patents/
@@ -38,5 +38,5 @@ main:
   # - title: "CV"
   #   url: /cv-json/
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
