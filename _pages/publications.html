@@ -5,32 +5,59 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<style>
+  .publication-note { color: var(--global-text-color-light, #666); font-size: 0.9rem; margin-bottom: 1.25em; }
+  .publication-list { padding-left: 1.3em; margin-top: 0.5em; }
+  .publication-list li { line-height: 1.5; margin-bottom: 0.7em; }
+  .publication-list strong { font-weight: 600; }
+</style>
 
-{% include base_path %}
+<p class="publication-note">Organized by venue type, with first-author works listed before co-authored works.</p>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<h2>Journal Papers</h2>
 
+<h3>First-Author Papers</h3>
+<ol class="publication-list">
+  <li><strong>L. Qiao</strong>, M. B. Mashhadi, Z. Gao, C. H. Foh, P. Xiao, and M. Bennis, "Latency-aware generative semantic communications with pre-trained diffusion models," <em>IEEE Wireless Communications Letters</em>, vol. 13, no. 10, pp. 2652-2656, 2024.</li>
+  <li><strong>L. Qiao</strong>, M. B. Mashhadi, Z. Gao, R. Tafazolli, M. Bennis, and D. Niyato, "Token communications: A large model-driven framework for cross-modal context-aware semantic communications," <em>IEEE Wireless Communications</em>, vol. 32, no. 5, pp. 80-88, 2025.</li>
+  <li><strong>L. Qiao</strong>, Z. Gao, M. B. Mashhadi, and D. Gündüz, "Massive digital over-the-air computation for communication-efficient federated edge learning," <em>IEEE Journal on Selected Areas in Communications</em>, vol. 42, no. 11, pp. 3078-3094, 2024.</li>
+  <li><strong>L. Qiao</strong>, A. Liao, Z. Li, H. Wang, Z. Gao, X. Gao, Y. Su, P. Xiao, L. You, and D. W. K. Ng, "Sensing user's activity, channel, and location with near-field extra-large-scale MIMO," <em>IEEE Transactions on Communications</em>, vol. 72, no. 2, pp. 890-906, 2023.</li>
+  <li><strong>L. Qiao</strong>, J. Zhang, Z. Gao, D. Zheng, M. J. Hossain, Y. Gao, D. W. K. Ng, and M. Di Renzo, "Joint activity and blind information detection for UAV-assisted massive IoT access," <em>IEEE Journal on Selected Areas in Communications</em>, vol. 40, no. 5, pp. 1489-1508, 2022.</li>
+  <li><strong>L. Qiao</strong>, J. Zhang, Z. Gao, D. W. K. Ng, M. Di Renzo, and M.-S. Alouini, "Massive access in media modulation based massive machine-type communications," <em>IEEE Transactions on Wireless Communications</em>, vol. 21, no. 1, pp. 339-356, 2021.</li>
+  <li><strong>L. Qiao</strong>, J. Zhang, Z. Gao, S. Chen, and L. Hanzo, "Compressive sensing based massive access for IoT relying on media modulation aided machine type communications," <em>IEEE Transactions on Vehicular Technology</em>, vol. 69, no. 9, pp. 10391-10396, 2020.</li>
+  <li><strong>L. Qiao</strong>, Y. Wang, H. Jiang, X. Liu, Y. Xing, Y. Wu, and Z. Gao, "MD-AirComp+: Adaptive quantization for blind massive digital over-the-air computation," <em>Chinese Journal of Electronics</em>, 2026.</li>
+</ol>
 
+<h3>Co-Authored Papers</h3>
+<ol class="publication-list">
+  <li>Z. Gao, M. Ke, Y. Mei, <strong>L. Qiao</strong>, S. Chen, D. W. K. Ng, and H. V. Poor, "Compressive-sensing-based grant-free massive access for 6G massive communication," <em>IEEE Internet of Things Journal</em>, vol. 11, no. 5, pp. 7411-7435, 2023.</li>
+  <li>H. Liu, T. Qin, Z. Gao, T. Mao, K. Ying, Z. Wan, <strong>L. Qiao</strong>, et al., "Near-space communications: The last piece of 6G space-air-ground-sea integrated network puzzle," <em>Space: Science &amp; Technology</em>, vol. 4, 0176, 2024.</li>
+  <li>Y. Zeng, <strong>L. Qiao</strong>, Z. Gao, T. Qin, Z. Wu, E. Khalaf, S. Chen, and M. Guizani, "CSI-GPT: Integrating generative pre-trained transformer with federated-tuning to acquire downlink massive MIMO channels," <em>IEEE Transactions on Vehicular Technology</em>, vol. 74, no. 3, pp. 5187-5192, 2024.</li>
+  <li>M. Ren, <strong>L. Qiao</strong>, L. Yang, Z. Gao, J. Chen, M. B. Mashhadi, P. Xiao, R. Tafazolli, et al., "Generative semantic communication via textual prompts: Latency performance tradeoffs," <em>IEEE Transactions on Vehicular Technology</em>, 2025.</li>
+  <li>S. F. Yilmaz, B. Hasırcıoğlu, <strong>L. Qiao</strong>, and D. Gündüz, "Private collaborative edge inference via over-the-air computation," <em>IEEE Transactions on Machine Learning in Communications and Networking</em>, vol. 3, pp. 215-231, 2025.</li>
+  <li>X. Liu, M. B. Mashhadi, <strong>L. Qiao</strong>, Y. Ma, R. Tafazolli, and M. Bennis, "Communicate less, synthesize the rest: Latency-aware intent-based generative semantic multicasting with diffusion models," <em>IEEE Transactions on Vehicular Technology</em>, 2026.</li>
+  <li>H. Yin, <strong>L. Qiao</strong>, Y. Ma, S. Sun, K. Li, Z. Gao, and D. Niyato, "Generative video semantic communication via multimodal semantic fusion with large model," <em>IEEE Transactions on Vehicular Technology</em>, 2025.</li>
+  <li>H. Zhang, M. Wu, <strong>L. Qiao</strong>, L. Liu, Z. Han, and Z. Gao, "Residual cross-attention transformer-based multi-user CSI feedback with deep joint source-channel coding," <em>IEEE Wireless Communications Letters</em>, 2025.</li>
+  <li>K. Zhang, Z. Jin, Y. Zhang, Z. Cheng, M. Zeng, <strong>L. Qiao</strong>, and Z. Fei, "TokenCom-UEP: Semantic importance-matched unequal error protection for resilient image transmission," <em>IEEE Wireless Communications Letters</em>, 2026.</li>
+  <li>D. Wu, J. Wang, Y. Zhang, D. Du, Z. Wan, <strong>L. Qiao</strong>, and T. Qin, "Novel cancellation techniques and throughput analysis for 6G full-duplex wireless system," <em>Space: Science &amp; Technology</em>, vol. 4, 0114, 2024.</li>
+</ol>
 
+<h2>Conference Papers</h2>
+
+<h3>First-Author Papers</h3>
+<ol class="publication-list">
+  <li><strong>L. Qiao</strong>, M. B. Mashhadi, Z. Gao, and D. Gündüz, "Token-domain multiple access: Exploiting semantic orthogonality for collision mitigation," <em>IEEE INFOCOM Workshops</em>, 2025.</li>
+  <li><strong>L. Qiao</strong>, Z. Gao, Z. Li, and D. Gündüz, "Unsourced massive access-based digital over-the-air computation for efficient federated edge learning," <em>IEEE International Symposium on Information Theory (ISIT)</em>, pp. 2003-2008, 2023.</li>
+  <li><strong>L. Qiao</strong>, A. Liao, Z. Gao, and H. Wang, "Indoor massive IoT access relying on millimeter-wave extra-large-scale MIMO," <em>IEEE Wireless Communications and Networking Conference (WCNC)</em>, pp. 1-6, 2023.</li>
+  <li><strong>L. Qiao</strong> and Z. Gao, "Joint active device and data detection for massive MTC relying on spatial modulation," <em>IEEE Wireless Communications and Networking Conference Workshops (WCNCW)</em>, 2020.</li>
+  <li><strong>L. Qiao</strong>, Z. Gao, C. He, Z. Xiao, D. Zheng, and J. Zhang, "Non-coherent grant-free massive IoT access for mMTC: An index modulation perspective," <em>IEEE/CIC International Conference on Communications in China (ICCC)</em>, pp. 694-699, 2021.</li>
+</ol>
+
+<h3>Co-Authored Papers</h3>
+<ol class="publication-list">
+  <li>S. Liu, Z. Gao, C. Hu, S. Tan, L. Fang, and <strong>L. Qiao</strong>, "Model-driven deep learning based precoding for FDD cell-free massive MIMO with imperfect CSI," <em>International Wireless Communications and Mobile Computing (IWCMC)</em>, pp. 696-701, 2022.</li>
+  <li>B. Liu, <strong>L. Qiao</strong>, Y. Wang, Z. Gao, Y. Ma, K. Ying, and T. Qin, "Text-guided token communication for wireless image transmission," <em>IEEE/CIC International Conference on Communications in China (ICCC)</em>, pp. 1-6, 2025.</li>
+  <li>Y. Wang, Z. Gao, B. Liu, S. Sun, <strong>L. Qiao</strong>, and Y. Ma, "Underwater image enhancement-enabled semantic transmission system with super-resolution," <em>IEEE/CIC International Conference on Communications in China (ICCC)</em>, pp. 1-6, 2025.</li>
+  <li>Y. Wang, X. Liu, Z. Gao, Y. Mei, K. Ying, <strong>L. Qiao</strong>, and H. Jiang, "Non-coherent massive access in massive MIMO-based LEO satellite Internet-of-Things," <em>IEEE/CIC International Conference on Communications in China (ICCC)</em>, pp. 1-6, 2025.</li>
+  <li>Y. Zeng, <strong>L. Qiao</strong>, H. Zhang, Z. Han, K. Wang, Y. Huang, and Z. Gao, "GroupMixFormer: Another blessing of DL-based massive MIMO hybrid beamforming," <em>IEEE/CIC International Conference on Communications in China (ICCC)</em>, 2024.</li>
+</ol>

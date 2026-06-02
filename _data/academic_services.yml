@@ -1,9 +1,28 @@
 # Academic Services & Activities
-- role: "Workshop Co-Chair"
-  description: "6G Massive & Immersive Communications and Metaverse workshop series in IEEE WCNC, IWCMC, ICCC, GLOBECOM 2024, and IWCMC 2025"
-- role: "TPC Co-Chair"
-  description: "IEEE ICCC 2023 OTFS Workshop"
-- role: "Volunteer"
-  description: "IEEE VTC-Fall 2022; The 7th London Symposium on Information Theory 2023"
-- role: "Peer Reviewer"
-  description: "Reviewed 60+ manuscripts for IEEE JSAC, TWC, TCOM, TVT, TCCN, WCL, CL, among others"
+- section: "Editorial Service"
+  items:
+    - role: "Youth Editorial Board Member"
+      description: "Journal of Communications and Information Networks (JCIN)"
+    - role: "Guest Editor"
+      description: "Chinese Journal of Electronics, Special Issue on 6G Intelligent Communication Networks, 2026"
+
+- section: "Conference Organization"
+  items:
+    - role: "Workshop Co-Chair"
+      description: "6G Satellite Communication and Networking, IEEE ICCC 2025 and IEEE VTC-Spring 2026"
+    - role: "Workshop Co-Chair"
+      description: "6G Massive & Immersive Communications and Metaverse, IEEE WCNC 2024, IWCMC 2024, ICCC 2024, GLOBECOM 2024, and IWCMC 2025"
+    - role: "TPC Co-Chair"
+      description: "6G Robot Workshop at IEEE GLOBECOM 2026 and IEEE VTC-Fall 2026; IEEE ICCC 2023 OTFS Workshop"
+
+- section: "Peer Review"
+  items:
+    - role: "Peer Reviewer"
+      description: "Reviewed 80+ manuscripts for IEEE JSAC, TWC, TCOM, TVT, TCCN, WCL, CL, and others"
+
+- section: "Teaching & Mentoring"
+  items:
+    - role: "Guest Lecture"
+      description: "\"Token Communications: Large Model-Driven Semantic Interaction for the AIoT Era,\" Durham University, Nov. 2025 (invited by Prof. Hongjian Sun)"
+    - role: "Guest Lecture"
+      description: "\"Generative Semantic Communications: A Paradigm Shift From Bits to Tokens,\" Beijing Institute of Technology, Sep. 2025 (invited by Prof. Zesong Fei)"

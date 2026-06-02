@@ -7,6 +7,11 @@ author_profile: true
 
 {% include base_path %}
 
-{% for service in site.data.academic_services %}
-* **{{ service.role }}:** {{ service.description }}
+{% for section in site.data.academic_services %}
+## {{ section.section }}
+
+{% for item in section.items %}
+* **{{ item.role }}:** {{ item.description }}
+{% endfor %}
+
 {% endfor %}
