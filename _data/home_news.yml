@@ -1,5 +1,7 @@
 # News for the homepage (most recent first).
 # Supported link fields: ieee, arxiv, demo, code, related, url (renders as button badges).
+- date: "2026-06"
+  text: "Appointed as a Youth Editorial Board Member of **Journal of Communications and Information Networks**."
 - date: "2026-04"
   text: "**TokenCom-UEP** published in IEEE Wireless Communications Letters — token importance-matched unequal error protection for token communications."
   ieee: "https://ieeexplore.ieee.org/document/11481106"
