@@ -1,6 +1,8 @@
 # Featured publications on the homepage. Order = display order.
 # image: thumbnail path relative to site root (place images in /images/).
 # excerpt: a short one-liner shown below the title.
+- slug: "2026-06-11-lgvsc-large-model-driven-generative-video-semantic-communication-framework"
+  excerpt: "A large-model-driven generative video semantic communication framework for efficient video semantic transmission under extremely low bandwidth."
 - slug: "2025-02-17-token-communications-large-model-framework"
   images:
     - "/images/featured-tokencom.png"

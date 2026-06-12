@@ -2,6 +2,7 @@
 # Supported link fields: ieee, arxiv, demo, code, related, url (renders as button badges).
 - date: "2026-06"
   text: "**Large Model-Driven Generative Video Communication Framework** accepted in IEEE TVT. Congratulations to Yu."
+  arxiv: "https://arxiv.org/pdf/2606.12899"
 - date: "2026-06"
   text: "Appointed as a Youth Editorial Board Member of **Journal of Communications and Information Networks**."
 - date: "2026-04"
