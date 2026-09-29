@@ -2,6 +2,8 @@
 # image: thumbnail path relative to site root (place images in /images/).
 # excerpt: a short one-liner shown below the title.
 - slug: "2026-09-09-from-semantic-to-token-communication"
+  images:
+    - "/images/featured-tokencom-survey.png"
   excerpt: "A comprehensive survey tracing the evolution from large-model-driven semantic communication to token communication for unified, scalable, and AI-native 6G connectivity."
 - slug: "2026-06-11-lgvsc-large-model-driven-generative-video-semantic-communication-framework"
   images:
