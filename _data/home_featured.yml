@@ -1,6 +1,8 @@
 # Featured publications on the homepage. Order = display order.
 # image: thumbnail path relative to site root (place images in /images/).
 # excerpt: a short one-liner shown below the title.
+- slug: "2026-09-09-from-semantic-to-token-communication"
+  excerpt: "A comprehensive survey tracing the evolution from large-model-driven semantic communication to token communication for unified, scalable, and AI-native 6G connectivity."
 - slug: "2026-06-11-lgvsc-large-model-driven-generative-video-semantic-communication-framework"
   images:
     - "/images/TVT_LGVSC.png"
@@ -9,7 +11,7 @@
   images:
     - "/images/featured-tokencom.png"
     - "/images/featured-tokencom-results.png"
-  excerpt: "A large multimodal model-driven semantic communication framework that unifies cross-modal transmission through token-level representations."
+  excerpt: "A large multimodal model-driven semantic communication framework that unifies cross-modal transmission through token-level representations; ranked as the 2nd most popular article in IEEE Wireless Communications."
 - slug: "2024-11-01-massive-digital-over-the-air-computation"
   images:
     - "/images/featured-mdaircomp-scenario.png"
